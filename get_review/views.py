@@ -70,8 +70,8 @@ def getTRR(prod):
             if ratingElement and searchObj:
                 reviews[index] = {
                     'articleName': each.find(class_="article-name").contents[0],
-                    'link':each.find('a')['href'],
-                    'summary':each.find(class_="synopsis").contents[0],
+                    'link': each.find('a')['href'],
+                    'summary': each.find(class_="synopsis").contents[0].replace("\n",""),
                     'rating': (len(ratingElement.find_all(class_="icon-star")) - (0.5 * len(ratingElement.find_all(class_="half"))))
                 }
                 index = index + 1
