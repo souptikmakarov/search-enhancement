@@ -603,3 +603,226 @@ DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articl
 DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}, 2: {'articleName': 'Dell XPS 15', 'rating': '4'}, 3: {'articleName': 'Dell XPS 15', 'rating': '3.5'}}
 DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}, 2: {'articleName': 'Dell XPS 15', 'rating': '4'}, 3: {'articleName': 'Dell XPS 15', 'rating': '3.5'}}
 DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}, 2: {'articleName': 'Dell XPS 15', 'rating': '4'}, 3: {'articleName': 'Dell XPS 15', 'rating': '3.5'}}
+WARNING:django.request:Not Found: /postParser/
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-1306282/review HTTP/1.1" 200 None
+DEBUG:root:url value missing
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-1306282/review HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /get_review/postParser/
+Traceback (most recent call last):
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\My_Files\Projects\search_enhancement\get_review\views.py", line 170, in postParser
+    procons[part.find('h4').contents[0]] = listObj
+UnboundLocalError: local variable 'listObj' referenced before assignment
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-1306282/review HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-1306282/review HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /get_review/postParser/
+Traceback (most recent call last):
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\My_Files\Projects\search_enhancement\get_review\views.py", line 172, in postParser
+    return JsonResponse(procons)
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\django\http\response.py", line 530, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "c:\users\souptik_banerjee\appdata\local\programs\python\python36-32\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "c:\users\souptik_banerjee\appdata\local\programs\python\python36-32\Lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\users\souptik_banerjee\appdata\local\programs\python\python36-32\Lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\django\core\serializers\json.py", line 124, in default
+    return super(DjangoJSONEncoder, self).default(o)
+  File "c:\users\souptik_banerjee\appdata\local\programs\python\python36-32\Lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'Tag' is not JSON serializable
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-1306282/review HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /get_review/postParser/
+Traceback (most recent call last):
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\My_Files\Projects\search_enhancement\get_review\views.py", line 173, in postParser
+    return JsonResponse(procons)
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\django\http\response.py", line 530, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "c:\users\souptik_banerjee\appdata\local\programs\python\python36-32\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "c:\users\souptik_banerjee\appdata\local\programs\python\python36-32\Lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\users\souptik_banerjee\appdata\local\programs\python\python36-32\Lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\django\core\serializers\json.py", line 124, in default
+    return super(DjangoJSONEncoder, self).default(o)
+  File "c:\users\souptik_banerjee\appdata\local\programs\python\python36-32\Lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'Tag' is not JSON serializable
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-1306282/review HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-1306282/review HTTP/1.1" 200 None
+DEBUG:root:url value missing
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-1306282/review HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:root:url value missing
+DEBUG:root:url value missing
+DEBUG:root:url value missing
+DEBUG:root:url value missing
+DEBUG:root:url value missing
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:root:url value missing
+DEBUG:root:url value missing
+DEBUG:root:url value missing
+DEBUG:root:url value missing
+DEBUG:root:url value missing
+DEBUG:root:url value missing
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+ERROR:django.request:Internal Server Error: /get_review/postParser/
+Traceback (most recent call last):
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\urllib3\connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\urllib3\util\connection.py", line 83, in create_connection
+    raise err
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\urllib3\connectionpool.py", line 357, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "c:\users\souptik_banerjee\appdata\local\programs\python\python36-32\Lib\http\client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "c:\users\souptik_banerjee\appdata\local\programs\python\python36-32\Lib\http\client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "c:\users\souptik_banerjee\appdata\local\programs\python\python36-32\Lib\http\client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "c:\users\souptik_banerjee\appdata\local\programs\python\python36-32\Lib\http\client.py", line 1026, in _send_output
+    self.send(msg)
+  File "c:\users\souptik_banerjee\appdata\local\programs\python\python36-32\Lib\http\client.py", line 964, in send
+    self.connect()
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\urllib3\connection.py", line 166, in connect
+    conn = self._new_conn()
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\urllib3\connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x04ACE0D0>: Failed to establish a new connection: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\urllib3\connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\urllib3\util\retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='www.techradar.com', port=80): Max retries exceeded with url: /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-1306282/review (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x04ACE0D0>: Failed to establish a new connection: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\My_Files\Projects\search_enhancement\get_review\views.py", line 154, in postParser
+    soup = scrapeData(url)
+  File "C:\My_Files\Projects\search_enhancement\get_review\views.py", line 49, in scrapeData
+    response = requests.get(url)
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\requests\adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='www.techradar.com', port=80): Max retries exceeded with url: /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-1306282/review (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x04ACE0D0>: Failed to establish a new connection: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond',))
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-1306282/review HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-910607/review HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-1306282/review HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/dell-xps-15-2016 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-early-2015-1299872/review HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-2012-910607/review HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-early-2015-1299872/review HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-1306282/review HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-910607/review HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/dell-xps-15-2016 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-2012-910607/review HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-1306282/review HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-early-2015-1299872/review HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-1306282/review HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-910607/review HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-2012-910607/review HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/dell-xps-15-2016 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-1306282/review HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnet.com
+DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET /products/dell-xps-15-2017/review/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnet.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnet.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnet.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnet.com
+DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET //products/dell-xps-15-2017/review/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET //products/dell-xps-15-october-2015/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET //products/dell-xps-15-fall-2013/review/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET //products/dell-xps-15/review/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnet.com
+DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET /products/dell-xps-15-2017/review/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnet.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnet.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnet.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnet.com
+DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET //products/dell-xps-15-2017/review/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET //products/dell-xps-15-october-2015/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET //products/dell-xps-15-fall-2013/review/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET //products/dell-xps-15/review/ HTTP/1.1" 200 None

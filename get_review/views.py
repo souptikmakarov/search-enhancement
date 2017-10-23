@@ -146,3 +146,58 @@ def getYoutubeReviews(request):
     except Exception:
         logit("prod value missing")
         return JsonResponse({'error' : 'prod value missing'})
+
+def techRadarPostParser(request):
+    try:
+        url = request.GET['url']
+        # url = "http://www.techradar.com/reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-1306282/review"
+        soup = scrapeData(url)
+        results = soup.find(class_="pro-con")
+        procons = {}
+        if results:
+            for part in results:
+                if part.find('h4') != -1:
+                    listObj = {}
+                    index = 0
+                    try:
+                        for item in part.find('ul'):
+                            if item != "\n":
+                                listObj[index] = item.contents[0].replace("\n","")
+                                index = index + 1
+                        procons[part.find('h4').contents[0].replace("\n","")] = listObj
+                    except NavigableString:
+                        pass
+            return JsonResponse(procons)
+        else:
+            return JsonResponse({'error': 'no data found'})
+    except Exception:
+        logit("url value missing")
+        return JsonResponse({'error' : 'url value missing'})
+
+def cnetPostParser(request):
+    try:
+        url = request.GET['url']
+        # url = "http://www.techradar.com/reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-15-1306282/review"
+        soup = scrapeData(url)
+        results = soup.find(class_="quickInfo")
+        if results:
+            good = results.find(class_="theGood").find(class_="summary").contents[0]
+            bad = results.find(class_="theBad").find("span").contents[0]
+            bottomLine = results.find(class_="theBottomLine").find(class_="description").contents[0]
+            quickInfo = {}
+            ratings = {}
+            quickInfo['good'] = good
+            quickInfo['bad'] = bad
+            quickInfo['bottomLine'] = bottomLine
+            if soup.find_all(class_="ratingsBars"):
+                for item in soup.find(class_="ratingsBars").find_all(class_="ratingBarStyle"):
+                    ratings[item.find(class_="categoryWrap").find("span").contents[0]] = float(item.find(class_="categoryWrap").find("strong").contents[0])
+            return JsonResponse({
+                'quickInfo' : quickInfo,
+                'ratings' : ratings
+            })
+        else:
+            return JsonResponse({'error': 'no data found'})
+    except Exception:
+        logit("url value missing")
+        return JsonResponse({'error' : 'url value missing'})
