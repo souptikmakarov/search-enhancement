@@ -573,3 +573,33 @@ DEBUG:root:prod value missing
 DEBUG:root:prod value missing
 DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
 DEBUG:root:prod value missing
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /search?searchTerm=xps+15 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnet.com
+DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET /search/?query=xps+15&page=1 HTTP/1.1" 200 45552
+DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}}
+DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}}
+DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}}
+DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}, 2: {'articleName': 'Dell XPS 15', 'rating': '4'}}
+DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}, 2: {'articleName': 'Dell XPS 15', 'rating': '4'}, 3: {'articleName': 'Dell XPS 15', 'rating': '3.5'}}
+DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}, 2: {'articleName': 'Dell XPS 15', 'rating': '4'}, 3: {'articleName': 'Dell XPS 15', 'rating': '3.5'}}
+DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}, 2: {'articleName': 'Dell XPS 15', 'rating': '4'}, 3: {'articleName': 'Dell XPS 15', 'rating': '3.5'}}
+DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}, 2: {'articleName': 'Dell XPS 15', 'rating': '4'}, 3: {'articleName': 'Dell XPS 15', 'rating': '3.5'}}
+DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}, 2: {'articleName': 'Dell XPS 15', 'rating': '4'}, 3: {'articleName': 'Dell XPS 15', 'rating': '3.5'}}
+DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}, 2: {'articleName': 'Dell XPS 15', 'rating': '4'}, 3: {'articleName': 'Dell XPS 15', 'rating': '3.5'}}
+DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}, 2: {'articleName': 'Dell XPS 15', 'rating': '4'}, 3: {'articleName': 'Dell XPS 15', 'rating': '3.5'}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /search?searchTerm=xps+15 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnet.com
+DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET /search/?query=xps+15&page=1 HTTP/1.1" 200 None
+DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}}
+DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}}
+DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}}
+DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}, 2: {'articleName': 'Dell XPS 15', 'rating': '4'}}
+DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}, 2: {'articleName': 'Dell XPS 15', 'rating': '4'}, 3: {'articleName': 'Dell XPS 15', 'rating': '3.5'}}
+DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}, 2: {'articleName': 'Dell XPS 15', 'rating': '4'}, 3: {'articleName': 'Dell XPS 15', 'rating': '3.5'}}
+DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}, 2: {'articleName': 'Dell XPS 15', 'rating': '4'}, 3: {'articleName': 'Dell XPS 15', 'rating': '3.5'}}
+DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}, 2: {'articleName': 'Dell XPS 15', 'rating': '4'}, 3: {'articleName': 'Dell XPS 15', 'rating': '3.5'}}
+DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}, 2: {'articleName': 'Dell XPS 15', 'rating': '4'}, 3: {'articleName': 'Dell XPS 15', 'rating': '3.5'}}
+DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}, 2: {'articleName': 'Dell XPS 15', 'rating': '4'}, 3: {'articleName': 'Dell XPS 15', 'rating': '3.5'}}
+DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}, 2: {'articleName': 'Dell XPS 15', 'rating': '4'}, 3: {'articleName': 'Dell XPS 15', 'rating': '3.5'}}
