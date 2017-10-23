@@ -1,0 +1,1 @@
+web: django-admin runserver.py
