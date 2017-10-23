@@ -31,7 +31,7 @@ def index(request):
         logit("prod value missing")
         return JsonResponse({'error': 'prod value missing'})
 
-    
+
 def setSearchTerm(product):
     global searchTerm
     searchTerm = product.replace(" ", "+")

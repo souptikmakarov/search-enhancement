@@ -558,3 +558,18 @@ DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articl
 DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}, 2: {'articleName': 'Dell XPS 15', 'rating': '4'}, 3: {'articleName': 'Dell XPS 15', 'rating': '3.5'}}
 DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}, 2: {'articleName': 'Dell XPS 15', 'rating': '4'}, 3: {'articleName': 'Dell XPS 15', 'rating': '3.5'}}
 DEBUG:root:{0: {'articleName': 'Dell XPS 15 (2017)', 'rating': '4'}, 1: {'articleName': 'Dell XPS 15', 'rating': '4'}, 2: {'articleName': 'Dell XPS 15', 'rating': '4'}, 3: {'articleName': 'Dell XPS 15', 'rating': '3.5'}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:root:prod value missing
+WARNING:django.request:Not Found: /favicon.ico
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+WARNING:django.request:Not Found: /get_review/getCnetReviews/
+WARNING:django.request:Not Found: /get_review/getCnetReviews/
+DEBUG:root:prod value missing
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnet.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnet.com
+DEBUG:root:prod value missing
+DEBUG:root:prod value missing
+DEBUG:root:prod value missing
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:root:prod value missing
