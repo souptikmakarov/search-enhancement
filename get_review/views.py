@@ -101,7 +101,9 @@ def getCR(prod):
             if itemInfo.find(class_="rating") and searchObj:
                 reviews[index] = {
                     'articleName': itemInfo.find("a").find("h3").contents[0],
-                    'rating': itemInfo.find(class_="rating").find(class_="stars-rating")['class'][3]
+                    'link': "https://www.cnet.com/" + itemInfo.find("a")['href'],
+                    'summary':itemInfo.find(class_="dek").contents[0],
+                    'rating': float(itemInfo.find(class_="rating").find(class_="stars-rating")['class'][3])
                 }
                 index = index + 1
         except NavigableString:
