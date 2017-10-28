@@ -8,5 +8,6 @@ urlpatterns = [
     url(r'^getYoutubeReviews', views.getYoutubeReviews, name='getYoutubeReviews'),
     url(r'^getCnetReviews', views.getCnetReviews, name='getCnetReviews'),
     url(r'^techRadarPostParser', views.techRadarPostParser, name='techRadarPostParser'),
-    url(r'^cnetPostParser', views.cnetPostParser, name='cnetPostParser')
+    url(r'^cnetPostParser', views.cnetPostParser, name='cnetPostParser'),
+    url(r'^sentimentApi', views.sentimentApi, name='sentimentApi')
 ]

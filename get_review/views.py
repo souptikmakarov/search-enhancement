@@ -13,10 +13,6 @@ import logging
 ytSearchTerm = ""
 searchTerm = ""
 regEx = ""
-logging.basicConfig(filename='C:\My_Files\Projects\search_enhancement\example.log', level=logging.DEBUG)
-
-def logit(obj):
-    logging.debug(obj)
 
 def index(request):
     try:
@@ -28,7 +24,6 @@ def index(request):
         }
         return JsonResponse(reviews)
     except Exception:
-        logit("prod value missing")
         return JsonResponse({'error': 'prod value missing'})
 
 
@@ -82,7 +77,6 @@ def getTechRadarReviews(request):
         prod = request.GET['prod']
         return JsonResponse(getTRR(prod))
     except Exception:
-        logit("prod value missing")
         return JsonResponse({'error' : 'prod value missing'})
 
 
@@ -97,7 +91,6 @@ def getCR(prod):
     for each in results:
         try:
             itemInfo = each.find(class_="itemInfo")
-            # logit(regEx)
             searchObj = re.search(regEx, itemInfo.find("a").find("h3").contents[0], re.M | re.I)
             if itemInfo.find(class_="rating") and searchObj:
                 reviews[index] = {
@@ -109,7 +102,6 @@ def getCR(prod):
                 index = index + 1
         except NavigableString:
             pass
-        logit(reviews)
     return reviews
 
 def getCnetReviews(request):
@@ -117,7 +109,6 @@ def getCnetReviews(request):
         prod = request.GET['prod']
         return JsonResponse(getCR(prod))
     except Exception:
-        logit("prod value missing")
         return JsonResponse({'error' : 'prod value missing'})
 
 
@@ -144,7 +135,6 @@ def getYoutubeReviews(request):
         prod = request.GET['prod']
         return JsonResponse(getYTR(prod))
     except Exception:
-        logit("prod value missing")
         return JsonResponse({'error' : 'prod value missing'})
 
 def techRadarPostParser(request):
@@ -171,7 +161,6 @@ def techRadarPostParser(request):
         else:
             return JsonResponse({'error': 'no data found'})
     except Exception:
-        logit("url value missing")
         return JsonResponse({'error' : 'url value missing'})
 
 def cnetPostParser(request):
@@ -199,5 +188,14 @@ def cnetPostParser(request):
         else:
             return JsonResponse({'error': 'no data found'})
     except Exception:
-        logit("url value missing")
         return JsonResponse({'error' : 'url value missing'})
+
+def sentimentApi(request):
+    try:
+        text = request.GET['text']
+        url = "http://text-processing.com/api/sentiment/"
+        data = {'text': (None, text)}
+        response = requests.post(url, files=data)
+        return JsonResponse(response.json())
+    except Exception:
+        return JsonResponse({'error' : 'text value missing'})

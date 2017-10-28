@@ -826,3 +826,36 @@ DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET //products/dell-xps-1
 DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET //products/dell-xps-15-october-2015/ HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET //products/dell-xps-15-fall-2013/review/ HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET //products/dell-xps-15/review/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnet.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnet.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnet.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnet.com
+DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET //products/dell-xps-15-2017/review/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET //products/dell-xps-15-october-2015/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET //products/dell-xps-15/review/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET //products/dell-xps-15-fall-2013/review/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnet.com
+DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET /products/dell-xps-15z/review/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnet.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnet.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnet.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cnet.com
+DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET //products/dell-xps-15-october-2015/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET //products/dell-xps-15-fall-2013/review/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET //products/dell-xps-15-2017/review/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://www.cnet.com:443 "GET //products/dell-xps-15/review/ HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.techradar.com
+DEBUG:urllib3.connectionpool:http://www.techradar.com:80 "GET /search?searchTerm=xps+13 HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /get_review/getTechRadarReviews/
+Traceback (most recent call last):
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\souptik_banerjee\Envs\myproject\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\My_Files\Projects\search_enhancement\get_review\views.py", line 83, in getTechRadarReviews
+    return JsonResponse(getTRR(prod))
+  File "C:\My_Files\Projects\search_enhancement\get_review\views.py", line 74, in getTRR
+    'summary': each.find(class_="synopsis").contents[0].replace("\n",""),
+TypeError: 'NoneType' object is not callable
