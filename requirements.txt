@@ -6,7 +6,7 @@ nltk==3.2.5
 requests==2.18.4
 six==1.11.0
 textblob==0.13.0
-urllib3==1.22
+urllib3==1.26.5
 virtualenv==15.1.0
 virtualenvwrapper-win==1.2.2
 Django==1.11.6
